@@ -1,0 +1,30 @@
+#include "W_Teleporter\dialog.hpp"
+
+class CfgFunctions {
+#include "W_Teleporter\CfgFunctions.hpp"
+};
+
+// Einstellbar via: Attributes -> Multiplayer -> Game Type
+class Header
+{
+    gameType = "coop";
+};
+
+// Einstellbar via: Attributes -> Multiplayer -> Sektion Respawn
+respawn = BASE; // Custom Position -> Marker respawn_west bzw. respawn
+respawnDelay = 5;
+respawnDialog = false;
+
+// KI in der Lobby deaktivieren oder wenn jemand rausfliegt (dann übernimmt in seltenen Fällen die KI)
+disabledAI = 1;
+
+// Name der Mission beim Laden (über Bild)
+// NICHT einstellen unter Attriubutes -> General -> Title
+OnLoadName = "OP TTT Mission";
+// optionales Bild im Missionsverzeichnis
+loadScreen="loading.jpg";
+// optionaler Text unter dem Bild
+onLoadMission = "Missionsbeispiel mit W-Teleporter";
+
+// Einstellbar via: Attributes -> General -> Author
+author="TTT Missionsmanagment";
