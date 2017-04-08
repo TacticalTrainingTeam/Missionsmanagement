@@ -21,7 +21,7 @@ disabledAI = 1;
 // Name der Mission beim Laden (über Bild)
 // NICHT einstellen unter Attriubutes -> General -> Title
 OnLoadName = "OP TTT Mission";
-// optionales Bild im Missionsverzeichnis
+// optionales Bild im Missionsverzeichnis z.B. 1024x512
 loadScreen="loading.jpg";
 // optionaler Text unter dem Bild
 onLoadMission = "Missionsbeispiel mit W-Teleporter und eigenem Loadout";
