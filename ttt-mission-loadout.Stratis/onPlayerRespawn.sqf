@@ -1,6 +1,6 @@
 ["Terminate"] call BIS_fnc_EGSpectator;
 
-switch (player getVariable "loadout") do {
+switch (player getVariable ["loadout",""]) do {
     case ("opl") : {
 		call compile preprocessFileLineNumbers "loadouts\opl.sqf";
     };
