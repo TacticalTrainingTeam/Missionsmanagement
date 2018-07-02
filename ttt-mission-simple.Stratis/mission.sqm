@@ -1,4 +1,4 @@
-version=52;
+version=53;
 class EditorData
 {
 	moveGridStep=1;
@@ -25,13 +25,13 @@ class EditorData
 binarizationWanted=0;
 addons[]=
 {
-	"ttt_units_bw_c",
+	"TTT_Units_BW",
 	"A3_Ui_F",
 	"A3_Structures_F_Mil_Flags",
 	"A3_Characters_F",
 	"A3_Modules_F_Curator_Curator",
 	"A3_Structures_F_Mil_Cargo",
-	"ttt_vehicles_bw_c",
+	"TTT_Vehicles_BW",
 	"A3_Structures_F_Mil_Helipads",
 	"A3_Soft_F_Gamma_Truck_01",
 	"ace_realisticnames",
@@ -48,48 +48,48 @@ class AddonsMetaData
 		items=12;
 		class Item0
 		{
-			className="ttt_units_bw_c";
-			name="ttt_units_bw_c";
+			className="TTT_Units_BW";
+			name="TTT_Units_BW";
 		};
 		class Item1
 		{
 			className="A3_Ui_F";
 			name="Arma 3 - User Interface";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item2
 		{
 			className="A3_Structures_F_Mil";
 			name="Arma 3 - Military Buildings and Structures";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item3
 		{
 			className="A3_Characters_F";
 			name="Arma 3 Alpha - Characters and Clothing";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item4
 		{
 			className="A3_Modules_F_Curator";
 			name="Arma 3 Zeus Update - Scripted Modules";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item5
 		{
-			className="ttt_vehicles_bw_c";
-			name="ttt_vehicles_bw_c";
+			className="TTT_Vehicles_BW";
+			name="TTT_Vehicles_BW";
 		};
 		class Item6
 		{
 			className="A3_Soft_F_Gamma";
 			name="Arma 3 - Unarmored Land Vehicles";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item7
 		{
@@ -124,7 +124,7 @@ class AddonsMetaData
 			className="A3_Structures_F_Ind";
 			name="Arma 3 - Industrial Structures";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 	};
 };
@@ -235,7 +235,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=9;
-					type="TTT_Gelb1_Bw_Flecktarn";
+					type="TTT_Yellow_1_BW_Flecktarn";
 				};
 				class Item1
 				{
@@ -254,7 +254,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=10;
-					type="TTT_Gelb2_Bw_Flecktarn";
+					type="TTT_Yellow_2_BW_Flecktarn";
 				};
 				class Item2
 				{
@@ -273,7 +273,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=11;
-					type="TTT_Gelb3_Bw_Flecktarn";
+					type="TTT_Yellow_3_BW_Flecktarn";
 				};
 			};
 			class Attributes
@@ -328,7 +328,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=13;
-					type="TTT_Gruen1_Bw_Flecktarn";
+					type="TTT_Green_1_BW_Flecktarn";
 				};
 				class Item1
 				{
@@ -347,7 +347,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=14;
-					type="TTT_Gruen2_Bw_Flecktarn";
+					type="TTT_Green_2_BW_Flecktarn";
 					atlOffset=-4.7683716e-007;
 				};
 				class Item2
@@ -367,7 +367,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=15;
-					type="TTT_Gruen3_Bw_Flecktarn";
+					type="TTT_Green_3_BW_Flecktarn";
 				};
 			};
 			class Attributes
@@ -423,7 +423,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=17;
-					type="TTT_Schwarz1_Bw_Flecktarn";
+					type="TTT_Black_1_BW_Flecktarn";
 					class CustomAttributes
 					{
 						class Attribute0
@@ -465,7 +465,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=18;
-					type="TTT_Schwarz2_Bw_Flecktarn";
+					type="TTT_Black_2_BW_Flecktarn";
 				};
 				class Item2
 				{
@@ -484,7 +484,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=19;
-					type="TTT_Schwarz3_Bw_Flecktarn";
+					type="TTT_Black_3_BW_Flecktarn";
 					atlOffset=4.7683716e-007;
 				};
 				class Item3
@@ -503,7 +503,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=20;
-					type="TTT_Schwarz4_Bw_Flecktarn";
+					type="TTT_Black_4_BW_Flecktarn";
 				};
 				class Item4
 				{
@@ -522,7 +522,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=21;
-					type="TTT_Schwarz5_Bw_Flecktarn";
+					type="TTT_Black_5_BW_Flecktarn";
 				};
 				class Item5
 				{
@@ -540,7 +540,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=22;
-					type="TTT_Schwarz6_Bw_Flecktarn";
+					type="TTT_Black_6_BW_Flecktarn";
 					atlOffset=9.5367432e-007;
 				};
 			};
@@ -596,7 +596,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=24;
-					type="TTT_Blau1_Bw_Flecktarn";
+					type="TTT_Blue_1_BW_Flecktarn";
 				};
 				class Item1
 				{
@@ -615,7 +615,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=25;
-					type="TTT_Blau2_Bw_Flecktarn";
+					type="TTT_Blue_2_BW_Flecktarn";
 					atlOffset=4.7683716e-007;
 				};
 				class Item2
@@ -635,7 +635,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=26;
-					type="TTT_Blau3_Bw_Flecktarn";
+					type="TTT_Blue_3_BW_Flecktarn";
 					atlOffset=4.7683716e-007;
 				};
 				class Item3
@@ -654,7 +654,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27;
-					type="TTT_Blau4_Bw_Flecktarn";
+					type="TTT_Blue_4_BW_Flecktarn";
 				};
 				class Item4
 				{
@@ -673,7 +673,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=28;
-					type="TTT_Blau5_Bw_Flecktarn";
+					type="TTT_Blue_5_BW_Flecktarn";
 				};
 				class Item5
 				{
@@ -691,7 +691,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=29;
-					type="TTT_Blau6_Bw_Flecktarn";
+					type="TTT_Blue_6_BW_Flecktarn";
 				};
 			};
 			class Attributes
@@ -746,7 +746,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=43;
-					type="TTT_Weiss1_Bw_Flecktarn";
+					type="TTT_White_1_BW_Flecktarn";
 					atlOffset=-4.7683716e-007;
 				};
 				class Item1
@@ -766,7 +766,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=44;
-					type="TTT_Weiss2_Bw_Flecktarn";
+					type="TTT_White_2_BW_Flecktarn";
 					atlOffset=4.7683716e-007;
 				};
 				class Item2
@@ -786,7 +786,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=45;
-					type="TTT_Weiss3_Bw_Flecktarn";
+					type="TTT_White_3_BW_Flecktarn";
 				};
 				class Item3
 				{
@@ -804,7 +804,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=46;
-					type="TTT_Weiss4_Bw_Flecktarn";
+					type="TTT_White_4_BW_Flecktarn";
 					atlOffset=-4.7683716e-007;
 				};
 			};
@@ -861,7 +861,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=48;
-					type="TTT_Silber1_Bw_Flecktarn";
+					type="TTT_Silver_1_BW_Flecktarn";
 					atlOffset=4.7683716e-007;
 				};
 				class Item1
@@ -881,7 +881,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=49;
-					type="TTT_Silber2_Bw_Flecktarn";
+					type="TTT_Silver_2_BW_Flecktarn";
 					atlOffset=4.7683716e-007;
 				};
 				class Item2
@@ -901,7 +901,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=50;
-					type="TTT_Silber3_Bw_Flecktarn";
+					type="TTT_Silver_3_BW_Flecktarn";
 					atlOffset=-4.7683716e-007;
 				};
 				class Item3
@@ -920,7 +920,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=51;
-					type="TTT_Silber4_Bw_Flecktarn";
+					type="TTT_Silver_4_BW_Flecktarn";
 					atlOffset=4.7683716e-007;
 				};
 				class Item4
@@ -940,7 +940,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=52;
-					type="TTT_Silber5_Bw_Flecktarn";
+					type="TTT_Silver_5_BW_Flecktarn";
 				};
 				class Item5
 				{
@@ -958,7 +958,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=53;
-					type="TTT_Silber6_Bw_Flecktarn";
+					type="TTT_Silver_6_BW_Flecktarn";
 				};
 			};
 			class Attributes
@@ -1251,7 +1251,7 @@ class Mission
 			{
 			};
 			id=61;
-			type="TTT_Logistik_Medic_Bw";
+			type="TTT_Crate_Medic_Doctor_BW";
 			atlOffset=0.0017089844;
 		};
 		class Item13
@@ -1268,7 +1268,7 @@ class Mission
 			{
 			};
 			id=62;
-			type="TTT_Logistik_Medic_Bw";
+			type="TTT_Crate_Medic_Doctor_BW";
 			atlOffset=0.0037078857;
 		};
 		class Item14
@@ -1285,7 +1285,7 @@ class Mission
 			{
 			};
 			id=63;
-			type="TTT_Sanitaetshelikopter_Bw_Flecktarn";
+			type="TTT_MTA_SAR_BW_Flecktarn";
 			atlOffset=-9.059906e-006;
 		};
 		class Item15
@@ -1300,7 +1300,6 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				createAsSimpleObject=1;
 			};
 			id=65;
 			type="Land_HelipadRescue_F";
@@ -1319,7 +1318,7 @@ class Mission
 			{
 			};
 			id=66;
-			type="TTT_Logistikhelikopter_Bw_Flecktarn";
+			type="TTT_MTA_Heavy_BW_Flecktarn";
 			atlOffset=-9.1075897e-005;
 		};
 		class Item17
@@ -1384,7 +1383,6 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				createAsSimpleObject=1;
 			};
 			id=70;
 			type="Land_HelipadSquare_F";
@@ -1401,10 +1399,10 @@ class Mission
 			flags=5;
 			class Attributes
 			{
-				createAsSimpleObject=1;
 			};
 			id=71;
 			type="Land_Shed_Big_F";
+			atlOffset=-0.00091171265;
 		};
 		class Item22
 		{
@@ -1420,7 +1418,7 @@ class Mission
 			{
 			};
 			id=72;
-			type="TTT_Logistik_Standardmunition_Bw";
+			type="TTT_Crate_Ammo_Standard_BW";
 		};
 		class Item23
 		{
@@ -1436,7 +1434,7 @@ class Mission
 			{
 			};
 			id=73;
-			type="TTT_Logistik_Standardmunition_Bw";
+			type="TTT_Crate_Ammo_Standard_BW";
 		};
 		class Item24
 		{
@@ -1452,7 +1450,7 @@ class Mission
 			{
 			};
 			id=74;
-			type="TTT_Logistik_Standardmunition_Bw";
+			type="TTT_Crate_Ammo_Standard_BW";
 		};
 		class Item25
 		{
@@ -1468,7 +1466,7 @@ class Mission
 			{
 			};
 			id=76;
-			type="TTT_Logistik_Medic_Bw";
+			type="TTT_Crate_Medic_Doctor_BW";
 		};
 		class Item26
 		{
@@ -1484,7 +1482,7 @@ class Mission
 			{
 			};
 			id=77;
-			type="TTT_Logistik_Medic_Bw";
+			type="TTT_Crate_Medic_Doctor_BW";
 			atlOffset=-0.0028343201;
 		};
 		class Item27
@@ -1501,7 +1499,7 @@ class Mission
 			{
 			};
 			id=78;
-			type="TTT_Logistik_Medic_Bw";
+			type="TTT_Crate_Medic_Doctor_BW";
 		};
 		class Item28
 		{
@@ -1517,7 +1515,7 @@ class Mission
 			{
 			};
 			id=79;
-			type="TTT_Logistik_Pionierausruestung_Bw";
+			type="TTT_Crate_Equipment_Pioneer_BW";
 		};
 		class Item29
 		{
@@ -1533,7 +1531,7 @@ class Mission
 			{
 			};
 			id=80;
-			type="TTT_Logistik_Granaten_Bw";
+			type="TTT_Crate_Ammo_Grenade_BW";
 		};
 		class Item30
 		{
@@ -1549,7 +1547,7 @@ class Mission
 			{
 			};
 			id=81;
-			type="TTT_Logistik_Granaten_Bw";
+			type="TTT_Crate_Ammo_Grenade_BW";
 			atlOffset=-0.094852448;
 		};
 		class Item31
@@ -1566,7 +1564,7 @@ class Mission
 			{
 			};
 			id=82;
-			type="TTT_Logistik_Werfer_Bw";
+			type="TTT_Crate_Weapons_Launcher_BW";
 		};
 		class Item32
 		{
@@ -1582,7 +1580,7 @@ class Mission
 			{
 			};
 			id=83;
-			type="TTT_Logistik_Werfermunition_Bw";
+			type="TTT_Crate_Ammo_Launcher_BW";
 		};
 		class Item33
 		{
@@ -1598,7 +1596,7 @@ class Mission
 			{
 			};
 			id=84;
-			type="TTT_Logistik_Standardmunition_Bw";
+			type="TTT_Crate_Ammo_Standard_BW";
 		};
 		class Item34
 		{
@@ -1614,7 +1612,7 @@ class Mission
 			{
 			};
 			id=85;
-			type="TTT_Logistik_Kiste_Klein_Bw";
+			type="TTT_Crate_Small_BW";
 		};
 		class Item35
 		{
@@ -1630,7 +1628,7 @@ class Mission
 			{
 			};
 			id=86;
-			type="TTT_Logistik_Kiste_Klein_Bw";
+			type="TTT_Crate_Small_BW";
 		};
 	};
 };

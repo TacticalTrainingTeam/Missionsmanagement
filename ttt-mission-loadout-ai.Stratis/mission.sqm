@@ -1,4 +1,4 @@
-version=52;
+version=53;
 class EditorData
 {
 	moveGridStep=1;
@@ -28,12 +28,13 @@ addons[]=
 	"A3_Characters_F",
 	"CUP_Creatures_Military_USMC",
 	"ace_explosives",
+	"ace_nouniformrestrictions",
 	"A3_Ui_F",
 	"A3_Structures_F_Mil_Flags",
 	"A3_Modules_F_Curator_Curator",
 	"A3_Structures_F_Mil_Cargo",
-	"ttt_units_bw_c",
-	"ttt_vehicles_bw_c",
+	"TTT_Units_BW",
+	"TTT_Vehicles_BW",
 	"A3_Structures_F_Mil_Helipads",
 	"A3_Soft_F_Gamma_Truck_01",
 	"ace_realisticnames",
@@ -47,13 +48,13 @@ class AddonsMetaData
 {
 	class List
 	{
-		items=14;
+		items=15;
 		class Item0
 		{
 			className="A3_Characters_F";
 			name="Arma 3 Alpha - Characters and Clothing";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item1
 		{
@@ -69,76 +70,83 @@ class AddonsMetaData
 		};
 		class Item3
 		{
+			className="ace_nouniformrestrictions";
+			name="ACE3 - No Uniform Restrictions";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
+		};
+		class Item4
+		{
 			className="A3_Ui_F";
 			name="Arma 3 - User Interface";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
-		class Item4
+		class Item5
 		{
 			className="A3_Structures_F_Mil";
 			name="Arma 3 - Military Buildings and Structures";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
-		class Item5
+		class Item6
 		{
 			className="A3_Modules_F_Curator";
 			name="Arma 3 Zeus Update - Scripted Modules";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
-		};
-		class Item6
-		{
-			className="ttt_units_bw_c";
-			name="ttt_units_bw_c";
+			url="https://www.arma3.com";
 		};
 		class Item7
 		{
-			className="ttt_vehicles_bw_c";
-			name="ttt_vehicles_bw_c";
+			className="TTT_Units_BW";
+			name="TTT_Units_BW";
 		};
 		class Item8
+		{
+			className="TTT_Vehicles_BW";
+			name="TTT_Vehicles_BW";
+		};
+		class Item9
 		{
 			className="A3_Soft_F_Gamma";
 			name="Arma 3 - Unarmored Land Vehicles";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
-		class Item9
+		class Item10
 		{
 			className="ace_rearm";
 			name="ACE3 - Rearm";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item10
+		class Item11
 		{
 			className="ace_cargo";
 			name="ACE3 - Cargo";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item11
+		class Item12
 		{
 			className="ace_repair";
 			name="ACE3 - Repair";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item12
+		class Item13
 		{
 			className="ace_refuel";
 			name="ACE3 - Refuel";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item13
+		class Item14
 		{
 			className="A3_Structures_F_Ind";
 			name="Arma 3 - Industrial Structures";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 	};
 };
@@ -257,7 +265,7 @@ class Mission
 						class Attribute0
 						{
 							property="ace_isMedic";
-							expression="if (_value != -1) then {_this setVariable [""ace_medical_medicClass"", _value, true];};";
+							expression="if (_value > -1) then {_this setVariable [""ace_medical_medicClass"", _value, true];};";
 							class Value
 							{
 								class data
@@ -339,7 +347,7 @@ class Mission
 						class Attribute0
 						{
 							property="ace_isMedic";
-							expression="if (_value != -1) then {_this setVariable [""ace_medical_medicClass"", _value, true];};";
+							expression="if (_value > -1) then {_this setVariable [""ace_medical_medicClass"", _value, true];};";
 							class Value
 							{
 								class data
@@ -421,7 +429,7 @@ class Mission
 						class Attribute0
 						{
 							property="ace_isMedic";
-							expression="if (_value != -1) then {_this setVariable [""ace_medical_medicClass"", _value, true];};";
+							expression="if (_value > -1) then {_this setVariable [""ace_medical_medicClass"", _value, true];};";
 							class Value
 							{
 								class data
@@ -539,7 +547,7 @@ class Mission
 						class Attribute0
 						{
 							property="ace_isMedic";
-							expression="if (_value != -1) then {_this setVariable [""ace_medical_medicClass"", _value, true];};";
+							expression="if (_value > -1) then {_this setVariable [""ace_medical_medicClass"", _value, true];};";
 							class Value
 							{
 								class data
@@ -621,7 +629,7 @@ class Mission
 						class Attribute0
 						{
 							property="ace_isMedic";
-							expression="if (_value != -1) then {_this setVariable [""ace_medical_medicClass"", _value, true];};";
+							expression="if (_value > -1) then {_this setVariable [""ace_medical_medicClass"", _value, true];};";
 							class Value
 							{
 								class data
@@ -703,7 +711,7 @@ class Mission
 						class Attribute0
 						{
 							property="ace_isMedic";
-							expression="if (_value != -1) then {_this setVariable [""ace_medical_medicClass"", _value, true];};";
+							expression="if (_value > -1) then {_this setVariable [""ace_medical_medicClass"", _value, true];};";
 							class Value
 							{
 								class data
@@ -822,7 +830,7 @@ class Mission
 						class Attribute0
 						{
 							property="ace_isMedic";
-							expression="if (_value != -1) then {_this setVariable [""ace_medical_medicClass"", _value, true];};";
+							expression="if (_value > -1) then {_this setVariable [""ace_medical_medicClass"", _value, true];};";
 							class Value
 							{
 								class data
@@ -904,7 +912,7 @@ class Mission
 						class Attribute0
 						{
 							property="ace_isMedic";
-							expression="if (_value != -1) then {_this setVariable [""ace_medical_medicClass"", _value, true];};";
+							expression="if (_value > -1) then {_this setVariable [""ace_medical_medicClass"", _value, true];};";
 							class Value
 							{
 								class data
@@ -987,7 +995,7 @@ class Mission
 						class Attribute0
 						{
 							property="ace_isMedic";
-							expression="if (_value != -1) then {_this setVariable [""ace_medical_medicClass"", _value, true];};";
+							expression="if (_value > -1) then {_this setVariable [""ace_medical_medicClass"", _value, true];};";
 							class Value
 							{
 								class data
@@ -1068,7 +1076,7 @@ class Mission
 						class Attribute0
 						{
 							property="ace_isMedic";
-							expression="if (_value != -1) then {_this setVariable [""ace_medical_medicClass"", _value, true];};";
+							expression="if (_value > -1) then {_this setVariable [""ace_medical_medicClass"", _value, true];};";
 							class Value
 							{
 								class data
@@ -1151,7 +1159,7 @@ class Mission
 						class Attribute0
 						{
 							property="ace_isMedic";
-							expression="if (_value != -1) then {_this setVariable [""ace_medical_medicClass"", _value, true];};";
+							expression="if (_value > -1) then {_this setVariable [""ace_medical_medicClass"", _value, true];};";
 							class Value
 							{
 								class data
@@ -1233,7 +1241,7 @@ class Mission
 						class Attribute0
 						{
 							property="ace_isMedic";
-							expression="if (_value != -1) then {_this setVariable [""ace_medical_medicClass"", _value, true];};";
+							expression="if (_value > -1) then {_this setVariable [""ace_medical_medicClass"", _value, true];};";
 							class Value
 							{
 								class data
@@ -1351,7 +1359,7 @@ class Mission
 						class Attribute0
 						{
 							property="ace_isMedic";
-							expression="if (_value != -1) then {_this setVariable [""ace_medical_medicClass"", _value, true];};";
+							expression="if (_value > -1) then {_this setVariable [""ace_medical_medicClass"", _value, true];};";
 							class Value
 							{
 								class data
@@ -1434,7 +1442,7 @@ class Mission
 						class Attribute0
 						{
 							property="ace_isMedic";
-							expression="if (_value != -1) then {_this setVariable [""ace_medical_medicClass"", _value, true];};";
+							expression="if (_value > -1) then {_this setVariable [""ace_medical_medicClass"", _value, true];};";
 							class Value
 							{
 								class data
@@ -1516,7 +1524,7 @@ class Mission
 						class Attribute0
 						{
 							property="ace_isMedic";
-							expression="if (_value != -1) then {_this setVariable [""ace_medical_medicClass"", _value, true];};";
+							expression="if (_value > -1) then {_this setVariable [""ace_medical_medicClass"", _value, true];};";
 							class Value
 							{
 								class data
@@ -1597,7 +1605,7 @@ class Mission
 						class Attribute0
 						{
 							property="ace_isMedic";
-							expression="if (_value != -1) then {_this setVariable [""ace_medical_medicClass"", _value, true];};";
+							expression="if (_value > -1) then {_this setVariable [""ace_medical_medicClass"", _value, true];};";
 							class Value
 							{
 								class data
@@ -1680,7 +1688,7 @@ class Mission
 						class Attribute0
 						{
 							property="ace_isMedic";
-							expression="if (_value != -1) then {_this setVariable [""ace_medical_medicClass"", _value, true];};";
+							expression="if (_value > -1) then {_this setVariable [""ace_medical_medicClass"", _value, true];};";
 							class Value
 							{
 								class data
@@ -1761,7 +1769,7 @@ class Mission
 						class Attribute0
 						{
 							property="ace_isMedic";
-							expression="if (_value != -1) then {_this setVariable [""ace_medical_medicClass"", _value, true];};";
+							expression="if (_value > -1) then {_this setVariable [""ace_medical_medicClass"", _value, true];};";
 							class Value
 							{
 								class data
@@ -1880,7 +1888,7 @@ class Mission
 						class Attribute0
 						{
 							property="ace_isMedic";
-							expression="if (_value != -1) then {_this setVariable [""ace_medical_medicClass"", _value, true];};";
+							expression="if (_value > -1) then {_this setVariable [""ace_medical_medicClass"", _value, true];};";
 							class Value
 							{
 								class data
@@ -1962,7 +1970,7 @@ class Mission
 						class Attribute0
 						{
 							property="ace_isMedic";
-							expression="if (_value != -1) then {_this setVariable [""ace_medical_medicClass"", _value, true];};";
+							expression="if (_value > -1) then {_this setVariable [""ace_medical_medicClass"", _value, true];};";
 							class Value
 							{
 								class data
@@ -2044,7 +2052,7 @@ class Mission
 						class Attribute0
 						{
 							property="ace_isMedic";
-							expression="if (_value != -1) then {_this setVariable [""ace_medical_medicClass"", _value, true];};";
+							expression="if (_value > -1) then {_this setVariable [""ace_medical_medicClass"", _value, true];};";
 							class Value
 							{
 								class data
@@ -2125,7 +2133,7 @@ class Mission
 						class Attribute0
 						{
 							property="ace_isMedic";
-							expression="if (_value != -1) then {_this setVariable [""ace_medical_medicClass"", _value, true];};";
+							expression="if (_value > -1) then {_this setVariable [""ace_medical_medicClass"", _value, true];};";
 							class Value
 							{
 								class data
@@ -2244,7 +2252,7 @@ class Mission
 						class Attribute0
 						{
 							property="ace_isMedic";
-							expression="if (_value != -1) then {_this setVariable [""ace_medical_medicClass"", _value, true];};";
+							expression="if (_value > -1) then {_this setVariable [""ace_medical_medicClass"", _value, true];};";
 							class Value
 							{
 								class data
@@ -2327,7 +2335,7 @@ class Mission
 						class Attribute0
 						{
 							property="ace_isMedic";
-							expression="if (_value != -1) then {_this setVariable [""ace_medical_medicClass"", _value, true];};";
+							expression="if (_value > -1) then {_this setVariable [""ace_medical_medicClass"", _value, true];};";
 							class Value
 							{
 								class data
@@ -2409,7 +2417,7 @@ class Mission
 						class Attribute0
 						{
 							property="ace_isMedic";
-							expression="if (_value != -1) then {_this setVariable [""ace_medical_medicClass"", _value, true];};";
+							expression="if (_value > -1) then {_this setVariable [""ace_medical_medicClass"", _value, true];};";
 							class Value
 							{
 								class data
@@ -2490,7 +2498,7 @@ class Mission
 						class Attribute0
 						{
 							property="ace_isMedic";
-							expression="if (_value != -1) then {_this setVariable [""ace_medical_medicClass"", _value, true];};";
+							expression="if (_value > -1) then {_this setVariable [""ace_medical_medicClass"", _value, true];};";
 							class Value
 							{
 								class data
@@ -2573,7 +2581,7 @@ class Mission
 						class Attribute0
 						{
 							property="ace_isMedic";
-							expression="if (_value != -1) then {_this setVariable [""ace_medical_medicClass"", _value, true];};";
+							expression="if (_value > -1) then {_this setVariable [""ace_medical_medicClass"", _value, true];};";
 							class Value
 							{
 								class data
@@ -2654,7 +2662,7 @@ class Mission
 						class Attribute0
 						{
 							property="ace_isMedic";
-							expression="if (_value != -1) then {_this setVariable [""ace_medical_medicClass"", _value, true];};";
+							expression="if (_value > -1) then {_this setVariable [""ace_medical_medicClass"", _value, true];};";
 							class Value
 							{
 								class data
@@ -3002,7 +3010,7 @@ class Mission
 			{
 			};
 			id=98;
-			type="TTT_Logistik_Medic_Bw";
+			type="TTT_Crate_Medic_Doctor_BW";
 			atlOffset=0.0033950806;
 		};
 		class Item13
@@ -3019,7 +3027,7 @@ class Mission
 			{
 			};
 			id=99;
-			type="TTT_Logistik_Medic_Bw";
+			type="TTT_Crate_Medic_Doctor_BW";
 			atlOffset=0.015385151;
 		};
 		class Item14
@@ -3036,7 +3044,7 @@ class Mission
 			{
 			};
 			id=100;
-			type="TTT_Sanitaetshelikopter_Bw_Flecktarn";
+			type="TTT_MTA_SAR_BW_Flecktarn";
 			atlOffset=-9.059906e-006;
 		};
 		class Item15
@@ -3051,7 +3059,6 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				createAsSimpleObject=1;
 			};
 			id=101;
 			type="Land_HelipadRescue_F";
@@ -3070,7 +3077,7 @@ class Mission
 			{
 			};
 			id=102;
-			type="TTT_Logistikhelikopter_Bw_Flecktarn";
+			type="TTT_MTA_Heavy_BW_Flecktarn";
 			atlOffset=-0.0028758049;
 		};
 		class Item17
@@ -3135,7 +3142,6 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				createAsSimpleObject=1;
 			};
 			id=106;
 			type="Land_HelipadSquare_F";
@@ -3152,10 +3158,10 @@ class Mission
 			flags=5;
 			class Attributes
 			{
-				createAsSimpleObject=1;
 			};
 			id=107;
 			type="Land_Shed_Big_F";
+			atlOffset=-0.00091171265;
 		};
 		class Item22
 		{
@@ -3171,7 +3177,7 @@ class Mission
 			{
 			};
 			id=108;
-			type="TTT_Logistik_Standardmunition_Bw";
+			type="TTT_Crate_Ammo_Standard_BW";
 		};
 		class Item23
 		{
@@ -3187,7 +3193,7 @@ class Mission
 			{
 			};
 			id=109;
-			type="TTT_Logistik_Standardmunition_Bw";
+			type="TTT_Crate_Ammo_Standard_BW";
 		};
 		class Item24
 		{
@@ -3203,7 +3209,7 @@ class Mission
 			{
 			};
 			id=110;
-			type="TTT_Logistik_Standardmunition_Bw";
+			type="TTT_Crate_Ammo_Standard_BW";
 		};
 		class Item25
 		{
@@ -3219,7 +3225,7 @@ class Mission
 			{
 			};
 			id=111;
-			type="TTT_Logistik_Medic_Bw";
+			type="TTT_Crate_Medic_Doctor_BW";
 		};
 		class Item26
 		{
@@ -3235,7 +3241,7 @@ class Mission
 			{
 			};
 			id=112;
-			type="TTT_Logistik_Medic_Bw";
+			type="TTT_Crate_Medic_Doctor_BW";
 		};
 		class Item27
 		{
@@ -3251,7 +3257,7 @@ class Mission
 			{
 			};
 			id=113;
-			type="TTT_Logistik_Medic_Bw";
+			type="TTT_Crate_Medic_Doctor_BW";
 		};
 		class Item28
 		{
@@ -3267,7 +3273,7 @@ class Mission
 			{
 			};
 			id=114;
-			type="TTT_Logistik_Pionierausruestung_Bw";
+			type="TTT_Crate_Equipment_Pioneer_BW";
 		};
 		class Item29
 		{
@@ -3283,7 +3289,7 @@ class Mission
 			{
 			};
 			id=115;
-			type="TTT_Logistik_Granaten_Bw";
+			type="TTT_Crate_Ammo_Grenade_BW";
 		};
 		class Item30
 		{
@@ -3299,7 +3305,7 @@ class Mission
 			{
 			};
 			id=116;
-			type="TTT_Logistik_Granaten_Bw";
+			type="TTT_Crate_Ammo_Grenade_BW";
 		};
 		class Item31
 		{
@@ -3315,8 +3321,7 @@ class Mission
 			{
 			};
 			id=117;
-			type="TTT_Logistik_Werfer_Bw";
-			atlOffset=0.043634415;
+			type="TTT_Crate_Weapons_Launcher_BW";
 		};
 		class Item32
 		{
@@ -3332,7 +3337,7 @@ class Mission
 			{
 			};
 			id=118;
-			type="TTT_Logistik_Werfermunition_Bw";
+			type="TTT_Crate_Ammo_Launcher_BW";
 		};
 		class Item33
 		{
@@ -3348,7 +3353,7 @@ class Mission
 			{
 			};
 			id=119;
-			type="TTT_Logistik_Standardmunition_Bw";
+			type="TTT_Crate_Ammo_Standard_BW";
 		};
 		class Item34
 		{
@@ -3364,7 +3369,7 @@ class Mission
 			{
 			};
 			id=120;
-			type="TTT_Logistik_Kiste_Klein_Bw";
+			type="TTT_Crate_Small_BW";
 		};
 		class Item35
 		{
@@ -3380,7 +3385,7 @@ class Mission
 			{
 			};
 			id=121;
-			type="TTT_Logistik_Kiste_Klein_Bw";
+			type="TTT_Crate_Small_BW";
 		};
 	};
 };
